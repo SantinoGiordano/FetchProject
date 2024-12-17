@@ -8,13 +8,17 @@ export interface IAccount extends Document {
   email: string;
 }
 
-const userSchema = new mongoose.Schema({
+const accountSchema = new mongoose.Schema({
   _id: { type: Number },
   name: {
     type: String,
     index: true,
     required: true,
     unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
   },
   age: { type: Number },
   email: { type: Number },
@@ -28,5 +32,6 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-const User = mongoose.model<IAccount>("user", userSchema);
-export default User;
+const Account = mongoose.model<IAccount>("account", accountSchema);
+
+export default Account;
