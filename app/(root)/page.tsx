@@ -1,4 +1,4 @@
-import { CreateAccount } from "./(root)/componets/CreateAccount";
+
 // import Register from "./componets/Register";
 
 
