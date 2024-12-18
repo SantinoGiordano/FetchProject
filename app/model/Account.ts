@@ -17,15 +17,20 @@ const accountSchema = new mongoose.Schema({
     type: String,
     required: true,
     index: true,
+    unique:true
   },
   password: {
     type: String,
     required: true,
   },
-  age: { type: Number },
+  age: { 
+    type: Number,
+    required: true
+},
   
   email: {
     type: String,
+    required: true
   },
   created_at: {
     type: Date,
