@@ -21,7 +21,7 @@ const accountSchema = new mongoose.Schema({
     required: true,
   },
   age: { type: Number },
-  email: { type: Number },
+  email: { type: String},
   created_at: {
     type: Date,
     default: Date.now(),
@@ -33,6 +33,7 @@ const accountSchema = new mongoose.Schema({
 });
 
 // const Account = mongoose.model<IAccount>("account", accountSchema);
-const Account = mongoose.models.account || mongoose.model('account', accountSchema);
+const Account =
+  mongoose.models.account || mongoose.model("account", accountSchema);
 
 export default Account;
