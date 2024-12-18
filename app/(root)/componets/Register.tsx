@@ -70,7 +70,7 @@ const Register = () => {
         )}{" "}
         {/* Display error message */}
         <button
-          className="border-black m-2 p-2 bg-white"
+          className="border-black m-2 p-2"
           type="submit"
           disabled={loading} // Disable button while loading
         >
