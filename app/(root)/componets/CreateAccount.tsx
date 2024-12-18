@@ -125,7 +125,7 @@ export function CreateAccount() {
 
         <button
           type="submit"
-          className="w-full py-3 bg-green-700 text-white font-semibold rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full py-3 bg-green-700 text-white font- rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           Create Account
         </button>
