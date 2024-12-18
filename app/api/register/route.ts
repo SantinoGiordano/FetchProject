@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import dbConnect from "@/utils/db"
 
 
-export async function POST(request:any){
+export async function POST(request){
    await dbConnect()
 
    const{username, password} = await request.json();
