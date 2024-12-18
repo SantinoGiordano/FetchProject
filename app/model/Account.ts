@@ -2,7 +2,6 @@
 import mongoose from "mongoose";
 
 export interface IAccount extends Document {
-  _id: number;
   name: string;
   age: number;
   email: string;
@@ -11,16 +10,23 @@ export interface IAccount extends Document {
 }
 
 const accountSchema = new mongoose.Schema({
+  name: {
+    type: String,
+  },
   username: {
     type: String,
     required: true,
+    index: true,
   },
   password: {
     type: String,
     required: true,
   },
   age: { type: Number },
-  email: { type: String },
+  
+  email: {
+    type: String,
+  },
   created_at: {
     type: Date,
     default: Date.now(),
