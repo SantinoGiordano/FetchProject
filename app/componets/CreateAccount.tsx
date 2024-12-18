@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from "react";
 
 export function CreateAccount() {
@@ -10,7 +12,7 @@ export function CreateAccount() {
   // Handle form submission
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // You can log or handle the form submission here
+    alert("Successful")
     console.log({
       name,
       username,
