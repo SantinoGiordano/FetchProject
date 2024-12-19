@@ -44,7 +44,7 @@ const EmailForm = () => {
     <>
     <div className="mt-20">
     </div>
-      <div className="p-10 bg-green-50 bg-cover bg-center h-screen">
+      <div className="p-20 bg-green-50 bg-cover bg-center h-screen">
         <div className=" bg-white max-w-lg mx-auto rounded-lg shadow-lg p-10 backdrop-blur-md">
           <h1 className="text-2xl font-bold text-center mb-4 text-black">
             Send Email
