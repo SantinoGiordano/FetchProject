@@ -32,7 +32,7 @@ export function CreateAccount() {
     <div className="min-h-screen flex justify-center items-center bg-green-50">
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
+        className="bg-white max-w-lg mx-auto p-8 rounded-lg shadow-lg w-full max-w-"
       >
         <h2 className="text-2xl font-semibold text-center mb-6 text-gray-700">
           Create Account
