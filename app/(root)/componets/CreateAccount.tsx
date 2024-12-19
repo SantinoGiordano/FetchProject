@@ -10,21 +10,20 @@ export function CreateAccount() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/post", {
+      const response = await axios.post("/api/postAccount", {
         name,
         email,
         age,
         username,
         password,
       });
-      console.log(response)
+      console.log(response);
     } catch (error) {
       console.log(error);
-      alert("Failed Account")
+      alert("Failed Account");
     }
   };
 
