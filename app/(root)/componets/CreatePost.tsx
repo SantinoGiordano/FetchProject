@@ -1,11 +1,13 @@
+
 import axios from 'axios';
 import React, { useState } from 'react';
 
-export interface IPost extends Document {
+export interface IUserpost extends Document {
   title: string;
   description: string;
   img: string;
   likes: number;
+  genre: string;
 }
 
 export function CreatePost() {
