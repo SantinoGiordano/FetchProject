@@ -1,24 +1,24 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 export interface IPost extends Document {
-   title:string;
-   description:string;
-   img:string;
-   likes:number;
-  }
-  
+  title: string;
+  description: string;
+  img: string;
+  likes: number;
+}
+
 const postSchema = new mongoose.Schema({
   title: {
     type: String,
   },
-  description:{
-    type:String,
+  description: {
+    type: String,
   },
-  img:{
-    type:String
+  img: {
+    type: String,
   },
-  like:{
-    type:Number
+  like: {
+    type: Number,
   },
   created_at: {
     type: Date,
