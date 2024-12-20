@@ -1,6 +1,6 @@
 import dbConnect from "@/utils/db";
-import Post from "@/app/model/Post";
 import { NextResponse } from "next/server";
+import Userpost from "@/app/model/Userpost";
 
 export async function POST(request) {
   try {
@@ -8,13 +8,14 @@ export async function POST(request) {
     await dbConnect();
 
     // Extract data from the request body
-    const { title, img, description, likes } = await request.json();
+    const { title, img, description, likes, genre } = await request.json();
 
-    const newPost = new Post({
+    const newPost = new Userpost({
       title,
       img,
       description,
       likes,
+      genre,
     });
 
     await newPost.save();
