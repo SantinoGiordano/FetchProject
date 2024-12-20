@@ -5,6 +5,7 @@ export interface IPost extends Document {
   description: string;
   img: string;
   likes: number;
+  genre:string;
 }
 
 const postSchema = new mongoose.Schema({
@@ -17,8 +18,11 @@ const postSchema = new mongoose.Schema({
   img: {
     type: String,
   },
-  like: {
+  likes: {
     type: Number,
+  },
+  genre:{
+    type: String,
   },
   created_at: {
     type: Date,
