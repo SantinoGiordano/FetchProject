@@ -18,7 +18,7 @@ const View = () => {
   useEffect(() => {
     const fetchUserpost = async () => {
       try {
-        const response = await fetch("/api/getposts");
+        const response = await fetch("/api/getPost");
         if (!response.ok) {
           throw new Error("Failed to fetch posts");
         }
@@ -53,9 +53,7 @@ const View = () => {
               <span className="text-sm text-gray-500">Genre: {post.genre}</span>
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-sm text-gray-500">Likes: {post.likes}</span>
-                <Link href={`/post/${index}`}>
-                  <a className="text-blue-500 hover:underline">Read more</a>
-                </Link>
+                  <Link className="text-blue-500 hover:underline" href={`/post/${index}`}>Read more</Link>
               </div>
             </div>
           ))}
