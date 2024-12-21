@@ -9,7 +9,7 @@ const page = () => {
       <div className="flex items-center justify-center min-h-screen">
         <div className="flex space-x-2">
           <Link
-            href={"./view"}
+            href={"./posts/view"}
             className="font-bold hover:scale-110 transition-transform"
           >
             View
