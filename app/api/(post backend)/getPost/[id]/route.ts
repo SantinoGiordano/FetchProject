@@ -2,7 +2,7 @@
 import Userpost from '@/app/model/Userpost';
 import dbConnect from '@/utils/db';
 import { NextResponse } from 'next/server';
-import React from 'react'
+
 
 export async function GET(request: Request, { params }: { params: { id?: string } }) {
     if (!params || !params.id) {
